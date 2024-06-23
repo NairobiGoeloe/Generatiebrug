@@ -1,0 +1,312 @@
+body {
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+p {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 700px;
+    text-align: center;
+}
+
+h1 {   
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+h2 {   
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 46px;
+    line-height: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 0%;
+    text-align: center;
+    width: 700px;
+}
+
+h4 {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Color and Sizing
+--------------------------------------------------------------*/
+.dark {
+    color: #09293B;
+}
+
+.white{
+    color: white;
+}
+
+.picture-size {
+    width: 350px;
+    margin: 20px;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+.fix-position {
+    height: fit-content;
+    grid-area: 1 / 1 / 3 / 7;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #205375;
+    grid-area: 1 / 1 / 2 / 7;
+    height: 70px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); 
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-group {
+   grid-area: 1 / 3 / 2 / 9; 
+   color: white;
+   display: inline-flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 90%;
+   gap: 30px;
+}
+
+.nav-link {
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    min-width: 95px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #F36C21;
+}
+    
+.logo-container {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 400px;  
+}
+
+.logo{
+    width: 400px;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #205375;
+    grid-column: span 6;
+    grid-row: span 5;
+    height: 500px
+}
+
+.main-picture {
+    grid-area: 1 / 5 / 13 / 9;
+    display: flex;
+    justify-content: flex-end; 
+    height: 550px;
+    margin-top: 70px;
+}
+
+.motto {
+    grid-area: 3 / 3 / 11 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+}
+
+.button {
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: #205375;
+    margin-top: 5px;
+}
+
+.button:hover {
+    color: #F36C21;
+}
+
+/*--------------------------------------------------------------
+# Section One
+--------------------------------------------------------------*/
+.section-one {
+    grid-area: 7 / 1 / 11 / 9;
+    height: 800px; 
+    width: 100%;
+    padding-top: 100px;
+}
+
+.tekst { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotos1 {
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------
+# Section two
+--------------------------------------------------------------*/
+.section-two {
+    background-color: #205375;
+    grid-area: 12 / 1 / 16 / 9;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 330px;
+    align-items: center;
+    gap: 100px;
+}
+
+.foto1 {
+    height: 420px;
+}
+
+/*--------------------------------------------------------------
+# Section three
+--------------------------------------------------------------*/
+.section-three {
+    grid-area: 17 / 1 / 22 / 9; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px ;
+}
+
+.fotos3 {
+    background-color: #205375;
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    margin-top: 200px;
+    margin-bottom: 100px;
+    height: 350px;
+}
+
+.foto3-container {
+    margin-top: -200px;
+}
+
+
+/*--------------------------------------------------------------
+# Section four
+--------------------------------------------------------------*/
+.section-four {
+    grid-area: 23 / 1 / 26 / 9; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px ;
+    background-color: #205375;
+}
+
+.fotos4 {
+    margin-bottom: -200px;
+}
+
+
+/*--------------------------------------------------------------
+# Section five
+--------------------------------------------------------------*/
+.section-five {
+grid-area: 26 / 1 / 30 / 9;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 300px;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    background-color:  #205375;
+    grid-area: 32 / 1 / 35 / 9;
+    height: 220px;
+    margin-top: 100px;
+}
+
+.navfooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 20px;
+    gap: 15px;
+}
+
+.logo-picture {
+    align-self: flex-end;
+    margin-top: -350px;
+}
+
+.footer .picture-size {
+    width: 300px;
+}
